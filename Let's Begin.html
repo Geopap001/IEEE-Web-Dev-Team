@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World με CSS & JS</title>
+
+    <!-- Το στοιχείο style περιέχει τον κώδικα CSS (τον σχεδιασμό/χρώματα) -->
+    <style>
+        /* Δίνουμε στυλ σε όλη τη σελίδα (body) */
+        body {
+            font-family: Arial, sans-serif; /* Γραμματοσειρά */
+            background-color: #222;       /* Σκούρο φόντο */
+            color: white;                 /* Άσπρα γράμματα */
+            text-align: center;           /* Όλα στο κέντρο */
+            margin-top: 100px;            /* Κενό από πάνω */
+        }
+        
+        /* Δίνουμε στυλ στον κεντρικό μας τίτλο */
+        h1 {
+            color: #007acc; /* Μπλε χρώμα */
+        }
+
+        /* Δίνουμε στυλ στο κουμπί μας */
+        button {
+            background-color: #007acc;
+            color: white;
+            padding: 15px 30px; /* Μέγεθος κουμπιού */
+            font-size: 18px;
+            border: none;       /* Χωρίς περίγραμμα */
+            border-radius: 8px; /* Στρογγυλεμένες γωνίες */
+            cursor: pointer;    /* Να γίνεται χεράκι το ποντίκι */
+        }
+
+        /* Τι θα γίνεται όταν το ποντίκι πάει ΠΑΝΩ από το κουμπί (Hover) */
+        button:hover {
+            background-color: #005999; /* Λίγο πιο σκούρο μπλε */
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Το id="main-title" είναι σαν "ταυτότητα" για να το βρει η JavaScript -->
+    <h1 id="main-title">Hello World!</h1>
+    
+    <p>Πάτησε το κουμπί για να δεις τη μαγεία της JavaScript.</p>
+
+    <!-- Όταν κάνουμε 'click' (onclick), τρέχει η συνάρτηση changeText() της JS -->
+    <button onclick="changeText()">Κάνε κλικ εδώ!</button>
+
+    <!-- Το στοιχείο script περιέχει τον κώδικα JavaScript (τη λογική/διαδραστικότητα) -->
+    <script>
+        // Φτιάχνουμε μια "εντολή" (συνάρτηση) με όνομα changeText
+        function changeText() {
+            // Βρίσκουμε τον τίτλο h1 χρησιμοποιώντας την ταυτότητά του (id)
+            let title = document.getElementById("main-title");
+            
+            // Αλλάζουμε το κείμενό του
+            title.innerHTML = "Η ομάδα Web Dev ξεκίνησε! 🚀";
+            
+            // Αλλάζουμε και το χρώμα του σε πράσινο
+            title.style.color = "#4CAF50"; 
+        }
+    </script>
+
+</body>
+</html>
