@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Μεταδεδομένα-->
+  </head>
+  <body>
+    <form action="/submit">
+      <fieldset>
+        <legend>Στοιχεία Επικοινωνίας</legend>
+        
+        <label for="username">Όνομα χρήστη:</label>
+        <input type="text" id="username" name="username">
+        
+        <label for="country">Χώρα:</label>
+        <select id="country" name="country">
+          <option value="gr">Ελλάδα</option>
+          <option value="cy">Κύπρος</option>
+        </select>
+        
+        <textarea placeholder="Γράψτε το μήνυμά σας..."></textarea>
+        
+        <button type="submit">Αποστολή</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

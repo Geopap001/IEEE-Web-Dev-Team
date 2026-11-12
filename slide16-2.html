@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .animated-box {
+                width: 100px;
+                height: 100px;
+                background-color: purple;
+                margin: 50px;
+                /* Ομαλή μετάβαση για όποια ιδιότητα αλλάξει (π.χ. στο hover) */
+                transition: all 0.3s ease-in-out; 
+                /* Συνεχόμενο animation 2 δευτερολέπτων */
+                animation: pulseAnimation 2s infinite;
+            }
+
+            .animated-box:hover {
+                transform: scale(1.2) rotate(15deg); /* Μεγέθυνση και περιστροφή */
+                background-color: orange;
+            }
+
+            /* Ορισμός των καρέ (keyframes) του animation */
+            @keyframes pulseAnimation {
+                0% { opacity: 1; }
+                50% { opacity: 0.5; }
+                100% { opacity: 1; }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="animated-box"></div>
+    </body>
+</html>

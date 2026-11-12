@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .flex-container {
+                display: flex; /* Ενεργοποίηση flexbox */
+                flex-direction: row; /* Στοιχεία σε οριζόντια γραμμή */
+                justify-content: space-between; /* Μοιράζει το κενό ανάμεσα στα στοιχεία */
+                align-items: center; /* Κεντράρει κάθετα */
+                flex-wrap: wrap; /* Αλλαγή γραμμής αν δεν χωράνε */
+                gap: 15px; /* Κενό μεταξύ των στοιχείων */
+                background-color: #ddd;
+                padding: 10px;
+            }
+            .flex-item {
+                background-color: #3498db;
+                color: white;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="flex-item">Στοιχείο 1</div>
+            <div class="flex-item">Στοιχείο 2</div>
+            <div class="flex-item">Στοιχείο 3</div>
+        </div>
+    </body>
+</html>
