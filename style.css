@@ -1,0 +1,313 @@
+/* CSS Variables για Light & Dark Mode */
+:root {
+
+    --page-bg: #f4f7f6;
+    --right-bg: #ffffff;
+    --left-bg: #2c3e50;
+    --text-main: #333333;
+    --heading-color: #2c3e50;
+    --sub-heading: #34495e;
+    --muted-text: #7f8c8d;
+    --border-light: #dddddd;
+
+}
+
+body.dark-mode {
+
+    --page-bg: #0f172a;
+    --right-bg: #1e293b;
+    --left-bg: #111827;
+    --text-main: #e2e8f0;
+    --heading-color: #38bdf8;
+    --sub-heading: #cbd5e1;
+    --muted-text: #94a3b8;
+    --border-light: #334155;
+
+}
+
+body {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--page-bg);
+    color: var(--text-main);
+    line-height: 1.5;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+/* Μπάρα εργαλείων */
+.toolbar {
+
+    max-width: 1000px;
+    margin: 0 auto 15px auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+}
+
+.tool-btn, .toggle-btn {
+
+    padding: 8px 14px;
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    background-color: var(--right-bg);
+    color: var(--text-main);
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+
+}
+
+.tool-btn:hover, .toggle-btn:hover {
+
+    opacity: 0.8;
+
+}
+
+.toggle-btn {
+
+    padding: 3px 10px;
+    font-size: 0.8em;
+
+}
+
+table {
+
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: var(--right-bg);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+td {
+
+    vertical-align: top;
+    padding: 30px;
+
+}
+
+.left-col {
+
+    width: 32%;
+    background-color: var(--left-bg);
+    color: #ecf0f1;
+
+}
+
+.right-col {
+
+    width: 68%;
+    background-color: var(--right-bg);
+
+}
+
+.profile-img {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: right;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+
+h1 {
+
+    margin: 0;
+    color: var(--heading-color);
+    font-size: 2.2em;
+    text-transform: uppercase;
+
+}
+
+h2 {
+
+    font-size: 1.2em;
+    color: var(--heading-color);
+    border-bottom: 2px solid var(--heading-color);
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+.left-col h2 {
+
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    margin-top: 15px;
+
+}
+
+.section-header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--heading-color);
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+
+}
+
+.section-header h2 {
+
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+
+h3 {
+
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: var(--sub-heading);
+    font-weight: 600;
+
+}
+
+.left-col h3 {
+
+    color: #ecf0f1;
+    font-size: 1.0em;
+    margin-bottom: 2px;
+
+}
+
+p {
+
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+
+}
+
+.quote-text {
+
+    margin-left: 20px;
+    font-style: italic;
+    margin-bottom: 5px;
+
+}
+
+.date {
+
+    font-style: italic;
+    color: var(--muted-text);
+    font-size: 0.9em;
+
+}
+
+.left-col .date {
+
+    color: #bdc3c7;
+
+}
+
+ul {
+
+    padding-left: 20px;
+    margin: 5px 0 15px 0;
+    font-size: 0.9em;
+
+}
+
+li {
+
+    margin-bottom: 6px;
+
+}
+
+.contact-info {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9em;
+    color: var(--muted-text);
+    margin-top: 10px;
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+
+}
+
+.contact-info span {
+
+    display: inline-block;
+
+}
+
+.contact-info a {
+
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.job-title {
+
+    font-weight: bold;
+    color: var(--heading-color);
+    font-size: 1.05em;
+
+}
+
+.subtitle {
+
+    font-size: 1.2em;
+    color: var(--muted-text);
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+
+.right-date {
+
+    float: right;
+    font-weight: normal;
+
+}
+
+.clearfix::after {
+
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+.hidden {
+
+    display: none;
+
+}
+
+/* Απόκρυψη κουμπιών κατά την εκτύπωση */
+@media print {
+
+    .no-print {
+
+        display: none;
+
+    }
+
+    body {
+        
+        padding: 0;
+        background-color: #fff;
+
+    }
+    
+}
